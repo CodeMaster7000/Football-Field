@@ -1,0 +1,324 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.back{
+	height:800px;
+	width:100%;
+	min-width: 800px;
+	background-color: rgb(187,225,180);
+	overflow: hidden;
+}
+
+.pitch-position{
+	position: relative;
+	height: 680px;
+	width: 1050px;
+	margin: 0 auto;
+	top: 35px;
+}
+
+.border{
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+}
+
+.alongside{
+	position: absolute;
+	height: 750px;
+	width: 1120px;
+	margin: 0 auto;
+	top: -30px;
+	left: -30px;
+	background-color: rgb(26,147,11);
+	z-index: 0;
+}
+
+.pitch{
+	position: absolute;
+	height: 680px;
+	width: 1050px;
+	margin: 0 auto;
+	top: 0px;
+	background-color: rgb(26,147,11);
+	z-index: 1;
+	overflow: hidden;
+}
+
+.virtual-pitch{
+	position: absolute;
+	height: 690px;
+	width: 1060px;
+	margin: 0 auto;
+	top: 0px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.scale-up-hor-center {
+	        animation: scale-up-hor-center 0.8s ease-in-out both;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+            transform: scaleX(0);
+  }
+  100% {
+            transform: scaleX(1);
+  }
+}
+
+.centre-line{
+	position: relative;
+	height: 680px;
+	width: 5px;
+	margin: 0 auto;
+	top: 5px;
+	left: 3.5px;
+	z-index: 2;
+	background-color: white;
+}
+
+.opacity-change{
+	animation: appear-gradually 0.8s;
+}
+
+@keyframes appear-gradually{
+	0%{
+		opacity: 0.1;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.middle-circle{
+	position: absolute;
+	height: 183px;
+	width: 183px;
+	border-radius: 50%;
+	margin: 0 auto;
+	top:248.5px;
+	left: 431.5px;
+	z-index: 3;
+}
+
+.slide-top {
+	        animation: slide-top 0.8s 1.6s both;
+}
+
+
+@keyframes slide-top {
+  0% {
+            transform: scale(0);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+
+.penalty-circle{
+	position: absolute;
+	height: 183px;
+	width: 183px;
+	border-radius: 50%;
+	top: 248.5px;
+	z-index: 3;
+}
+
+.boxmask{
+	position: absolute;
+	height: 413px;
+	width: 165px;
+	z-index: 5;
+	top:138.5px;
+	background-color: rgb(26,147,11);
+}
+
+.appear{
+    	    animation: appear 1s 0s both;
+}
+
+@keyframes appear{
+	0%{
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.big-box{
+	position: absolute;
+	height: 403px;
+	width: 165px;
+	z-index: 6;
+	top:138.5px;
+	
+}
+
+.small-box{
+	position: absolute;
+	height: 183.2px;
+	width: 55px;
+	z-index: 7;
+	top: 248.5px;
+}
+
+.slide-right-1 {
+	        animation: slide-right-1 0.5s 1.2s both;
+}
+
+
+@keyframes slide-right-1 {
+  0% {
+            transform: translateX(-200px);
+  }
+  100% {
+            transform: translateX(0px);
+  }
+}
+
+.slide-right-2 {
+	        animation: slide-right-2 0.8s 0.8s both;
+}
+
+
+@keyframes slide-right-2 {
+  0% {
+            transform: translateX(-300px);
+  }
+  100% {
+            transform: translateX(0px);
+  }
+}
+
+.slide-right-3 {
+	        animation: slide-right-3 1s 1.4s both;
+}
+
+@keyframes slide-right-3 {
+  0% {
+            transform: scale(0);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+
+.left{
+	left: 0px;
+}
+
+.left2{
+	left: 18.5px;
+}
+
+.left4{
+	left: 6px;
+}
+
+.right{
+	left: 885px;
+}
+
+.right2{
+	left: 848.5px;
+}
+
+.right3{
+	left: 995px;
+}
+
+.right4{
+	left: 890px;
+}
+
+.slide-left-1 {
+	        animation: slide-left-1 0.5s 1.2s both;
+}
+
+
+@keyframes slide-left-1 {
+  0% {
+            transform: translateX(200px);
+  }
+  100% {
+            transform: translateX(0px);
+  }
+}
+
+.slide-left-2 {
+	        animation: slide-left-2 0.8s 0.8s both;
+}
+
+@keyframes slide-left-2 {
+  0% {
+            transform: translateX(300px);
+  }
+  100% {
+            transform: translateX(0px);
+  }
+}
+
+.slide-left-3 {
+	        animation: slide-left-3 1s 1.4s both;
+}
+
+@keyframes slide-left-3 {
+  0% {
+            transform: scale(0);
+  }
+  100% {
+            transform: scale(1);
+  }
+}
+
+.leftgoal{
+	position: absolute;
+	width: 20px;
+	height: 73.2px;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-color: white;
+	background-color: rgb(27,139,13);
+	left: -22.5px;
+	top: 303.4px;
+	z-index: 4;
+}
+
+.rightgoal{
+	position: absolute;
+	width: 20px;
+	height: 73.2px;
+	border-left-style: none;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-color: white;
+	background-color: rgb(27,139,13);
+	left: 1060px;
+	top: 303.4px;
+	z-index: 4;
+}
+
+.emerge{
+	animation: emerge 1s 2s both;
+}
+
+@keyframes emerge{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
